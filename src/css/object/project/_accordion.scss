@@ -1,6 +1,9 @@
 .p-accordion {
   width: 80%;
   margin: 0 auto;
+  h1 {
+    font-family: $font-en;
+  }
   &__item {
     overflow: hidden;
     &:nth-of-type(5n+1) {
@@ -24,10 +27,12 @@
     position: relative;
     cursor: pointer;
     color: #ffffff;
+    font-family: $font-en;
+    line-height: 2;
     &:before {
       content: '';
       width: 18px;
-      height: 2px;
+      height: 3px;
       position: absolute;
       top: 50%; right: 30px;
       background-color: #ffffff;
@@ -35,7 +40,7 @@
     }
     &:after {
       content: '';
-      width: 2px;
+      width: 3px;
       height: 18px;
       position: absolute;
       top: 50%; right: 38px;
